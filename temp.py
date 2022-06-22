@@ -8,7 +8,7 @@ Created on Wed Jun 22 14:14:29 2022
 
 objects = ['planet','WD','BH','NS','comet','RG','TZA','GCs','galaxy']
 processes = ['GDF','DF','tides','kicks','RR']
-environments = ['GCs','protoplanetary disk','atmospheres']
+environments = ['GCs','protoplanetary disk','atmospheres','AGN','GMC','field','DM halo']
 categories = [objects, processes,environments]
 categories_names = ['objects', 'processes','environments']
 
@@ -31,15 +31,12 @@ class Checkbar(Frame):
 if __name__ == '__main__':
    root = Tk()
    lng = Checkbar(root, categories_names)
- #  tgl = Checkbar(root, ['English','German'])
    lng.pack(side=TOP,  fill=X)
-#   tgl.pack(side=LEFT)
    lng.config(relief=GROOVE, bd=2)
 
    def allstates(): 
       print(list(lng.state()))
    Button(root, text='Go!', command=root.quit).pack(side=RIGHT)
- #  Button(root, text='Go!', command=allstates).pack(side=RIGHT)
    root.mainloop()
    
    choices = list(lng.state())
@@ -54,11 +51,3 @@ if __name__ == '__main__':
            
    print(final_idea)
            
-           
-
-    
-    
-
-
-
-
