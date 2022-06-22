@@ -38,8 +38,8 @@ if __name__ == '__main__':
 
    def allstates(): 
       print(list(lng.state()))
-   Button(root, text='Quit', command=root.quit).pack(side=RIGHT)
-   Button(root, text='Go!', command=allstates).pack(side=RIGHT)
+   Button(root, text='Go!', command=root.quit).pack(side=RIGHT)
+ #  Button(root, text='Go!', command=allstates).pack(side=RIGHT)
    root.mainloop()
    
    choices = list(lng.state())
@@ -53,6 +53,7 @@ if __name__ == '__main__':
            final_idea = final_idea+str(categories_names[i])+':'+str(cat[rand])+' '
            
    print(final_idea)
+           
            
 
     
